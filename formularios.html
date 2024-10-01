@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---->
+    <form method="post" action="index.js" enctype="multipart/form-data">
+
+        <fieldset>
+            <label for="nombre"> nombre de usuarios</label><br>
+        <input type="text" name="nombreUsuario" id="nombre"> <br>
+        <label for="contra">contraseña</label><br>
+        <input type="password" name="pass" id="contra"><br>
+
+        <label>Genero</label><br>
+        <input type="radio" name="Genero" value="fem" id="Femenino" checked> 
+        <label for="Femenino">Femenino</label> <br>
+        <input type="radio" name="genero"   value=" masc" id="masculino">
+        <label for="masculino">masculino</label><br>
+        <input type="radio" name="genero" value="otro" id="otro">
+        <label for="otro">Otro</label><br>
+
+        <label for="foto">Incluir foto de perfil</label>
+        <input type="file" name="perfil">
+
+        </fieldset>
+        
+
+        <input type="checkbox" name="acuerdo" value="acepta" id="acuerdos" checked>
+        <label for="acuerdos">Acepto los terminos y condiciones</label><br>
+
+        <input type="checkbox" name="recibir" value="si" id="recibir">
+        <label for="recibir">deseo recibir novedades por mail</label><br>
+
+
+        <input type="submit" name="enviar" value="Enviar datos">
+        <input type="reset" name="borrar" value="borrar datos">
+    </form>
+    
+
+
+</body>
+
+</html>
